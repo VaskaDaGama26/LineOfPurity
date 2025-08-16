@@ -1,0 +1,114 @@
+* {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+html {
+  margin-top: 23px;
+  scroll-behavior: smooth;
+  scroll-padding: 60px;
+}
+
+.header,
+section {
+  padding-inline: 70px;
+}
+.header,
+section,
+.footer__inner {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+.partners {
+  max-width: unset;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/**
+  * Reusable Components 
+  */
+
+.section__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+.section__heading__title {
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  line-height: 120%;
+}
+
+.badge {
+  line-height: 120%;
+  font-size: 1.25rem;
+  width: fit-content;
+  text-align: center;
+  font-style: normal;
+  color: var(--light-gray);
+  font-weight: 400;
+  margin: 0;
+}
+
+.cta {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 217px;
+  height: 217px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/star.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: rotate 20s linear infinite;
+  transform-origin: center;
+}
+.cta a {
+  font-style: normal;
+  margin-top: 8px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--white);
+}
+
+/**
+  * Animations 
+  */
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

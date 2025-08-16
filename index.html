@@ -4,108 +4,181 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Линия чистоты</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/colors.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+
+    <!-- Font – Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
-      <img src="" alt="" class="logo" />
-      <nav>
-        <ul>
-          <li>Услуги</li>
-          <li>Компания</li>
-          <li>Партнеры</li>
-          <li>Контакты</li>
+      <img src="assets/logo.svg" alt="" class="header__logo logo" />
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <a href="#services"><li class="header__nav-item">Услуги</li></a>
+          <a href="#advantages"><li class="header__nav-item">Компания</li></a>
+          <a href="#partners"><li class="header__nav-item">Партнеры</li></a>
+          <a href="#contacts"><li class="header__nav-item">Контакты</li></a>
         </ul>
       </nav>
-      <address>
+      <address class="header__contacts">
         <a href="tel:+79857992151">+7 985 799-21-51</a>
       </address>
     </header>
+
     <main>
-      <section class="hero">
-        <div class="hero-row hero__row-top">
+      <section class="section section--hero">
+        <div class="hero__row hero__row-top">
           <div class="hero__text">
-            <p class="hero__subtitle">Профессиональный клининг</p>
-            <p class="hero__subtitle">В офисах, на складах</p>
-            <p class="hero__subtitle">И на объектах после ремонта</p>
+            <div class="hero__subtitle">
+              <p class="hero__subtitle-text">Профессиональный клининг</p>
+              <p class="hero__subtitle-text">В офисах, на складах</p>
+              <p class="hero__subtitle-text">И на объектах после ремонта</p>
+            </div>
             <h1 class="hero__title">Чистота бизнеса начинается с нас</h1>
           </div>
-          <div class="hero__cta">
-            <a href="#" class="hero__button">Оставить заявку</a>
+          <div class="hero__cta cta">
+            <a href="#" class="cta__button">Оставить<br />заявку</a>
           </div>
         </div>
-        <div class="hero-row hero__row-bottom">
+        <div class="hero__row hero__row-bottom">
           <div class="hero__image">
-            <img src="" alt="" />
+            <img src="assets/HeroSection/hero-image.png" alt="" />
           </div>
         </div>
       </section>
-      <section class="services"></section>
-      <section class="advantages">
-        <h3>[ НАШИ ПРЕИМУЩЕСТВА ]</h3>
-        <h2>Мы ценим ваше время, поэтому делаем всё быстро и качественно</h2>
+      <section id="services" class="section section--services"></section>
+      <section id="advantages" class="section section--advantages">
+        <div class="advantages__heading section__heading">
+          <h3 class="badge services__badge">[ НАШИ ПРЕИМУЩЕСТВА ]</h3>
+          <h2 class="advantages__heading__title section__heading__title">
+            Мы ценим ваше время, поэтому <br />
+            делаем всё быстро и качественно
+          </h2>
+        </div>
         <ul class="advantages__list">
           <li></li>
           <li></li>
           <li></li>
         </ul>
         <div class="advantages__video">
-          <p>
+          <p class="advantages__video-label">
             Сегодня в компании работают более 14300 специалистов -
             профессионалов, обеспеченных фирменной одеждой, специальным набором
-            оборкдования, а главное - искренним желанием доставить вам
-            удовольствие посредством высококачественной уборки ваших помещений!
+            оборудования, <br />
+            а главное – искренним желанием доставить Вам удовольствие
+            посредством высококачественной уборки Ваших помещений!
           </p>
-          <video src=""></video>
+          <div class="advantages__video-wrapper">
+            <video
+              autoplay
+              muted
+              loop
+              src="assets/AdvantagesSection/video.mp4"
+            ></video>
+          </div>
         </div>
       </section>
-      <section class="outsourcing">
-        <h2>Аутсорсинг персонала</h2>
+      <section class="section section--outsourcing">
+        <h2 class="outsourcing__heading__title section__heading__title">
+          Аутсорсинг персонала
+        </h2>
         <div class="outsourcing__row">
           <ul class="outsourcing__list">
-            <li></li>
-            <li></li>
-            <li></li>
+            <li class="outsourcing__item">
+              Мы оперативно предоставляем услуги аутсорсинга, обеспечивая вас
+              надежными кассирами, работниками торгового зала, грузчиками,
+              уборщиками и фасовщиками в нужном объеме.
+            </li>
+            <li class="outsourcing__item">
+              С нашей помощью вы забудете о проблемах с поиском и оформлением
+              сотрудников, оптимизируете свои затраты и повысите эффективность
+              работы.
+            </li>
+            <li class="outsourcing__item">
+              Мы берем на себя подбор, обучение и управление персоналом, чтобы
+              вы могли сосредоточиться на развитии своего бизнеса.
+            </li>
           </ul>
-          <img class="outsourcing__image" src="" alt="" />
+          <img
+            class="outsourcing__image"
+            src="assets/OutsourcingSection/image 19.png"
+            alt=""
+          />
         </div>
       </section>
-      <section class="partners">
-        <h3>[ ПАРТНЕРЫ ]</h3>
-        <h2>
-          Наши партнеры — те, кто верят в результат и долгосрочное
-          сотрудничество
-        </h2>
-        <div class="partners__marquee"></div>
+      <section id="partners" class="section section--partners">
+        <div class="partners__heading section__heading">
+          <h3 class="badge partners__badge">[ ПАРТНЕРЫ ]</h3>
+          <h2 class="partners__heading__title section__heading__title">
+            Наши партнеры — те, кто верят<br />
+            в результат и долгосрочное сотрудничество
+          </h2>
+        </div>
+        <div aria-live="polite" class="partners__marquee">
+          <div class="partners__marquee-inner"></div>
+        </div>
       </section>
-      <section class="contacts">
-        <div class="contacts__row contacts__row-top">
-          <h3>[ КОНТАКТЫ ]</h3>
-          <h2>Нужна консультация? Напишите нам — ответим в ближайшее время</h2>
+      <section id="contacts" class="section section--contacts">
+        <div class="contacts__heading section__heading">
+          <h3 class="badge contacts__badge">[ КОНТАКТЫ ]</h3>
+          <h2 class="contacts__heading__title section__heading__title">
+            Нужна консультация?<br />Напишите нам — ответим <br />в ближайшее
+            время
+          </h2>
         </div>
         <div class="contacts__row-bottom">
           <address>
             <div class="contacts__content">
               <div class="contacts__contact">
-                <h3>[ НОМЕР ТЕЛЕФОНА ]</h3>
+                <h3 class="badge contact__badge">[ НОМЕР ТЕЛЕФОНА ]</h3>
                 <a href="tel:+79857992151">+7 985 799-21-51</a>
               </div>
               <div class="contacts__contact">
-                <h3>[ ЭЛЕКТРОННАЯ ПОЧТА ]</h3>
+                <h3 class="badge contact__badge">[ ЭЛЕКТРОННАЯ ПОЧТА ]</h3>
                 <a href="mailto:lineclean@mail.ru">lineclean@mail.ru</a>
               </div>
             </div>
-            <div class="contacts__cta">
-              <a href="#" class="hero__button">Оставить заявку</a>
-            </div>
           </address>
+          <div class="contacts__cta cta">
+            <a href="#" class="cta__button">Оставить<br />заявку</a>
+          </div>
         </div>
       </section>
     </main>
+
     <footer class="footer">
-      <div class="footer__row footer__row-top"></div>
-      <div class="footer__row footer__row-bottom">
-        <a href="">Политика конфиденциальности</a>
+      <div class="footer__inner">
+        <div class="footer__row footer__row-top">
+          <img src="assets/logo.svg" alt="" class="footer__logo logo" />
+          <ul class="footer__nav-list">
+            <a href="#services"><li class="footer__nav-item">Услуги</li></a>
+            <a href="#advantages"><li class="footer__nav-item">Компания</li></a>
+            <a href="#partners"><li class="footer__nav-item">Партнеры</li></a>
+            <a href="#contacts"><li class="footer__nav-item">Контакты</li></a>
+          </ul>
+          <div class="footer__contacts">
+            <a href="tel:+79857992151">+7 985 799-21-51</a>
+            <a href="mailto:lineclean@mail.ru">lineclean@mail.ru</a>
+          </div>
+        </div>
+        <hr size="1" class="footer__divider" />
+        <div class="footer__row footer__row-bottom">
+          <a href="">Политика конфиденциальности</a>
+        </div>
       </div>
     </footer>
+
+    <script src="scripts/marquee.js"></script>
   </body>
 </html>
