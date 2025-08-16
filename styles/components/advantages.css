@@ -11,18 +11,6 @@
   overflow: hidden;
 }
 
-.advantages__video-wrapper {
-  width: 100%;
-  height: 500px;
-}
-.advantages__video-wrapper video {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-  object-position: 50% top;
-}
-
 .advantages__video-label {
   max-width: 970px;
   margin: 0;
@@ -31,4 +19,17 @@
   font-weight: 500;
   line-height: 120%;
   text-align: center;
+}
+
+.advantages__video-wrapper {
+  width: 100%;
+  height: 550px;
+}
+
+.advantages__video-wrapper video {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: 50% top;
 }

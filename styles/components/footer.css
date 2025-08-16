@@ -4,11 +4,6 @@
   background-color: var(--black);
 }
 
-.footer__divider {
-  margin: 60px 0 30px;
-  color: var(--dark-gray);
-}
-
 .footer__row-top {
   display: flex;
   justify-content: space-between;
@@ -58,6 +53,11 @@
 
   text-decoration: none;
   font-style: normal;
+}
+
+.footer__divider {
+  margin: 60px 0 30px;
+  color: var(--dark-gray);
 }
 
 .footer__row-bottom {

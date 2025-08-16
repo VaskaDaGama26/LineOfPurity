@@ -4,6 +4,7 @@
   align-items: center;
   margin-bottom: 53px;
 }
+
 .header__nav-list {
   display: flex;
   gap: 1.875rem;
@@ -12,9 +13,11 @@
 
   list-style-type: none;
 }
+
 .header__nav-list a {
   text-decoration: none;
 }
+
 .header__nav-item,
 .header__contacts a {
   font-size: 1.25rem;

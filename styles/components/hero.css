@@ -3,20 +3,14 @@
   gap: 3.75rem;
 }
 
-.hero__text {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
 .hero__row {
   position: relative;
 }
 
-.hero__title {
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 6rem;
-  font-weight: 400;
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 .hero__subtitle {
@@ -30,6 +24,12 @@
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 120%;
+}
+
+.hero__title {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 6rem;
+  font-weight: 400;
 }
 
 .hero__image img {
