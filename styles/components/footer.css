@@ -26,15 +26,13 @@
   list-style-type: none;
 }
 
-.footer__nav-list a {
-  text-decoration: none;
-}
-
-.footer__nav-item {
+.footer__nav-item a {
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 120%;
   color: var(--white);
+
+  text-decoration: none;
 }
 
 .footer__contacts {

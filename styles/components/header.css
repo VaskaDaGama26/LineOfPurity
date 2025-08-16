@@ -14,11 +14,7 @@
   list-style-type: none;
 }
 
-.header__nav-list a {
-  text-decoration: none;
-}
-
-.header__nav-item,
+.header__nav-item a,
 .header__contacts a {
   font-size: 1.25rem;
   font-weight: 500;

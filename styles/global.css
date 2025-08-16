@@ -25,7 +25,7 @@ section,
 
   margin-inline: auto;
 }
-.partners {
+.section--partners {
   max-width: unset;
   margin: 0;
   padding: 0;
@@ -48,8 +48,8 @@ section,
   align-items: center;
   gap: 2.5rem;
 }
-.section__heading__title {
-  margin: 0;
+.section__heading__title span {
+  display: block;
   font-family: "Helvetica Neue";
   font-size: 3.5rem;
   font-weight: 500;
@@ -96,6 +96,11 @@ section,
   position: relative;
   z-index: 1;
   margin-top: 8px;
+
+  text-decoration: none;
+}
+.cta a span {
+  display: block;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 120%;
@@ -103,7 +108,6 @@ section,
   color: var(--white);
 
   font-style: normal;
-  text-decoration: none;
 }
 
 /**

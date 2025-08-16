@@ -25,10 +25,10 @@
       <img src="assets/logo.svg" alt="" class="header__logo logo" />
       <nav class="header__nav">
         <ul class="header__nav-list">
-          <a href="#services"><li class="header__nav-item">Услуги</li></a>
-          <a href="#advantages"><li class="header__nav-item">Компания</li></a>
-          <a href="#partners"><li class="header__nav-item">Партнеры</li></a>
-          <a href="#contacts"><li class="header__nav-item">Контакты</li></a>
+          <li class="header__nav-item"><a href="#services">Услуги</a></li>
+          <li class="header__nav-item"><a href="#advantages">Компания</a></li>
+          <li class="header__nav-item"><a href="#partners">Партнеры</a></li>
+          <li class="header__nav-item"><a href="#contacts">Контакты</a></li>
         </ul>
       </nav>
       <address class="header__contacts">
@@ -40,20 +40,27 @@
       <section class="section section--hero">
         <div class="hero__row hero__row-top">
           <div class="hero__text">
-            <div class="hero__subtitle">
-              <p class="hero__subtitle-text">Профессиональный клининг</p>
-              <p class="hero__subtitle-text">В офисах, на складах</p>
-              <p class="hero__subtitle-text">И на объектах после ремонта</p>
+            <div class="hero__subtitle-text">
+              <span>Профессиональный клининг</span>
+              <span>В офисах, на складах</span>
+              <span>И на объектах после ремонта</span>
             </div>
             <h1 class="hero__title">Чистота бизнеса начинается с нас</h1>
           </div>
           <div class="hero__cta cta">
-            <a href="#" class="cta__button">Оставить<br />заявку</a>
+            <a href="#" class="cta__button">
+              <span>Оставить</span>
+              <span>заявку</span>
+            </a>
           </div>
         </div>
         <div class="hero__row hero__row-bottom">
           <div class="hero__image">
-            <img src="assets/HeroSection/hero-image.png" alt="" />
+            <img
+              loading="lazy"
+              src="assets/HeroSection/hero-image.png"
+              alt=""
+            />
           </div>
         </div>
       </section>
@@ -62,10 +69,10 @@
 
       <section id="advantages" class="section section--advantages">
         <div class="advantages__heading section__heading">
-          <h3 class="badge advantages__badge">[ НАШИ ПРЕИМУЩЕСТВА ]</h3>
+          <span class="badge advantages__badge">[ НАШИ ПРЕИМУЩЕСТВА ]</span>
           <h2 class="advantages__heading__title section__heading__title">
-            Мы ценим ваше время, поэтому <br />
-            делаем всё быстро и качественно
+            <span>Мы ценим ваше время, поэтому</span>
+            <span>делаем всё быстро и качественно</span>
           </h2>
         </div>
         <ul class="advantages__list">
@@ -75,19 +82,23 @@
         </ul>
         <div class="advantages__video">
           <p class="advantages__video-label">
-            Сегодня в компании работают более 14300 специалистов -
-            профессионалов, обеспеченных фирменной одеждой, специальным набором
-            оборудования, <br />
-            а главное – искренним желанием доставить Вам удовольствие
-            посредством высококачественной уборки Ваших помещений!
+            <span>
+              Сегодня в компании работают более 14300 специалистов -
+              профессионалов, обеспеченных фирменной одеждой, специальным
+              набором оборудования,
+            </span>
+            <span>
+              а главное – искренним желанием доставить Вам удовольствие
+              посредством высококачественной уборки Ваших помещений!</span
+            >
           </p>
           <div class="advantages__video-wrapper">
-            <video
-              autoplay
-              muted
-              loop
-              src="assets/AdvantagesSection/video.mp4"
-            ></video>
+            <video autoplay muted loop>
+              <source
+                src="assets/AdvantagesSection/video.mp4"
+                type="video/mp4"
+              />
+            </video>
           </div>
         </div>
       </section>
@@ -114,6 +125,7 @@
             </li>
           </ul>
           <img
+            loading="lazy"
             class="outsourcing__image"
             src="assets/OutsourcingSection/image 19.png"
             alt=""
@@ -123,10 +135,10 @@
 
       <section id="partners" class="section section--partners">
         <div class="partners__heading section__heading">
-          <h3 class="badge partners__badge">[ ПАРТНЕРЫ ]</h3>
+          <span class="badge partners__badge">[ ПАРТНЕРЫ ]</span>
           <h2 class="partners__heading__title section__heading__title">
-            Наши партнеры — те, кто верят<br />
-            в результат и долгосрочное сотрудничество
+            <span>Наши партнеры — те, кто верят </span>
+            <span>в результат и долгосрочное сотрудничество</span>
           </h2>
         </div>
         <div aria-live="polite" class="partners__marquee">
@@ -136,27 +148,30 @@
 
       <section id="contacts" class="section section--contacts">
         <div class="contacts__heading section__heading">
-          <h3 class="badge contacts__badge">[ КОНТАКТЫ ]</h3>
+          <span class="badge contacts__badge">[ КОНТАКТЫ ]</span>
           <h2 class="contacts__heading__title section__heading__title">
-            Нужна консультация?<br />Напишите нам — ответим <br />в ближайшее
-            время
+            <span>Нужна консультация?</span>
+            <span>Напишите нам — ответим</span>
+            <span>в ближайшее время</span>
           </h2>
         </div>
         <div class="contacts__row-bottom">
-          <address>
-            <div class="contacts__content">
-              <div class="contacts__contact">
-                <h3 class="badge contact__badge">[ НОМЕР ТЕЛЕФОНА ]</h3>
-                <a href="tel:+79857992151">+7 985 799-21-51</a>
-              </div>
-              <div class="contacts__contact">
-                <h3 class="badge contact__badge">[ ЭЛЕКТРОННАЯ ПОЧТА ]</h3>
-                <a href="mailto:lineclean@mail.ru">lineclean@mail.ru</a>
-              </div>
+          <address class="contacts__content">
+            <div class="contacts__contact">
+              <span class="badge contact__badge">[ НОМЕР ТЕЛЕФОНА ]</span>
+              <a href="tel:+79857992151">+7 985 799-21-51</a>
+            </div>
+            <div class="contacts__contact">
+              <span class="badge contact__badge">[ ЭЛЕКТРОННАЯ ПОЧТА ]</span>
+              <a href="mailto:lineclean@mail.ru">lineclean@mail.ru</a>
             </div>
           </address>
+
           <div class="contacts__cta cta">
-            <a href="#" class="cta__button">Оставить<br />заявку</a>
+            <a href="#" class="cta__button">
+              <span>Оставить</span>
+              <span>заявку</span>
+            </a>
           </div>
         </div>
       </section>
@@ -167,10 +182,10 @@
         <div class="footer__row footer__row-top">
           <img src="assets/logo.svg" alt="" class="footer__logo logo" />
           <ul class="footer__nav-list">
-            <a href="#services"><li class="footer__nav-item">Услуги</li></a>
-            <a href="#advantages"><li class="footer__nav-item">Компания</li></a>
-            <a href="#partners"><li class="footer__nav-item">Партнеры</li></a>
-            <a href="#contacts"><li class="footer__nav-item">Контакты</li></a>
+            <li class="footer__nav-item"><a href="#services">Услуги</a></li>
+            <li class="footer__nav-item"><a href="#advantages">Компания</a></li>
+            <li class="footer__nav-item"><a href="#partners">Партнеры</a></li>
+            <li class="footer__nav-item"><a href="#contacts">Контакты</a></li>
           </ul>
           <div class="footer__contacts">
             <a href="tel:+79857992151">+7 985 799-21-51</a>

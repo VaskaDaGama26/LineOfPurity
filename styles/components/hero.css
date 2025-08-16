@@ -13,13 +13,12 @@
   gap: 1.25rem;
 }
 
-.hero__subtitle {
-  display: flex;
-  flex-direction: column;
+.hero__subtitle-text {
   width: fit-content;
 }
 
-.hero__subtitle-text {
+.hero__subtitle-text span {
+  display: block;
   margin: 0;
   font-size: 1.25rem;
   font-weight: 500;
