@@ -28,33 +28,36 @@
 .hero__subtitle-text {
   margin: 0;
   font-size: 1.25rem;
-  line-height: 120%;
   font-weight: 500;
+  line-height: 120%;
 }
 
 .hero__image img {
-  object-fit: cover;
-  object-position: 50% 40%;
+  position: relative;
   width: 100%;
   height: 550px;
-  position: relative;
+
+  object-fit: cover;
+  object-position: 50% 40%;
 }
 
 .hero__image::before {
-  z-index: 2;
-  content: "";
   position: absolute;
-  inset: 0;
+  z-index: 2;
   background: var(--hero-img-bg);
+  content: "";
+
+  inset: 0;
   pointer-events: none;
 }
 
 .hero__image::after {
-  z-index: 3;
-  content: "";
   position: absolute;
-  inset: 0;
-  opacity: 20%;
+  z-index: 3;
   background: linear-gradient(to top, var(--hero-img-gradient));
+  opacity: 20%;
+  content: "";
+
+  inset: 0;
   pointer-events: none;
 }

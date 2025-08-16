@@ -1,7 +1,7 @@
 .section--contacts {
+  gap: 7.5rem;
   margin-top: 120px;
   margin-bottom: 80px;
-  gap: 7.5rem;
 }
 
 .contacts__heading {
@@ -15,6 +15,7 @@
   position: relative;
   width: 100%;
   padding: 3.75rem;
+
   background-color: var(--lighter-gray);
 }
 
@@ -32,17 +33,18 @@
 }
 
 .contacts__contact a {
-  line-height: 120%;
-  text-decoration: none;
-  color: var(--black);
-  font-weight: 500;
-  font-size: 3rem;
   font-family: "Helvetica Neue";
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 120%;
+  color: var(--black);
+
+  text-decoration: none;
   font-style: normal;
 }
 
 .contacts__cta {
-  right: 60px;
   top: 50%;
+  right: 60px;
   transform: translateY(-50%);
 }

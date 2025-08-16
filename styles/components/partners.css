@@ -1,18 +1,20 @@
 .section--partners {
-  margin-top: 120px;
   gap: 5rem;
+  margin-top: 120px;
 }
 
 .partners__marquee {
-  overflow: hidden;
-  background-color: var(--bg-marquee);
-  padding: 1.5rem 0 2.75rem;
   width: 100%;
+  padding: 1.5rem 0 2.75rem;
+  overflow: hidden;
+
+  background-color: var(--bg-marquee);
 }
 
 .partners__marquee-inner {
   display: flex;
-  gap: 7.5rem;
   align-items: center;
+  gap: 7.5rem;
+
   white-space: nowrap;
 }

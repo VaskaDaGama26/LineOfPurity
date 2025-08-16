@@ -1,6 +1,7 @@
 .footer {
-  background-color: var(--black);
   padding: 2.875rem 4.375rem 2rem;
+
+  background-color: var(--black);
 }
 
 .footer__divider {
@@ -10,9 +11,9 @@
 
 .footer__row-top {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   align-items: flex-start;
-  justify-content: space-between;
 }
 
 .footer__logo {
@@ -21,13 +22,13 @@
 }
 
 .footer__nav-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0 96px 0 0;
-
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
+  margin: 0 96px 0 0;
+  padding: 0;
+
+  list-style-type: none;
 }
 
 .footer__nav-list a {
@@ -35,10 +36,10 @@
 }
 
 .footer__nav-item {
-  line-height: 120%;
   font-size: 1.25rem;
-  color: var(--white);
   font-weight: 500;
+  line-height: 120%;
+  color: var(--white);
 }
 
 .footer__contacts {
@@ -49,13 +50,14 @@
 }
 
 .footer__contacts a {
-  font-size: 2.25rem;
-  text-decoration: none;
-  color: var(--white);
-  font-style: normal;
   font-family: "Helvetica Neue";
-  line-height: 120%;
+  font-size: 2.25rem;
   font-weight: 500;
+  line-height: 120%;
+  color: var(--white);
+
+  text-decoration: none;
+  font-style: normal;
 }
 
 .footer__row-bottom {
@@ -64,8 +66,9 @@
 }
 
 .footer__row-bottom a {
-  text-align: center;
-  text-decoration: none;
   font-size: 0.75rem;
+  text-align: center;
   color: var(--white);
+
+  text-decoration: none;
 }
