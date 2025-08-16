@@ -38,9 +38,14 @@
   font-weight: 500;
   line-height: 120%;
   color: var(--black);
+  transition: color 200ms ease-out;
 
   text-decoration: none;
   font-style: normal;
+}
+
+.contacts__contact a:hover {
+  color: var(--light-blue);
 }
 
 .contacts__cta {

@@ -4,7 +4,9 @@
   --dark-gray: #4f4f4f;
   --light-gray: #cacaca;
   --lighter-gray: #f1f1f1;
-  --hero-img-bg: #006fff87;
+  --dark-blue: #004896;
+  --light-blue: #619ce9;
+  --hero-img-bg: hsla(214, 100%, 50%, 0.529);
   --hero-img-gradient: rgba(14, 65, 176, 0.32) 32%, rgba(0, 72, 150, 1) 100%;
   --bg-marquee: #e8f3fc;
 }

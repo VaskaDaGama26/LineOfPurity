@@ -70,3 +70,15 @@
 
   text-decoration: none;
 }
+
+.footer__nav-item a,
+.footer__contacts a,
+.footer__row-bottom a {
+  transition: color 200ms ease-out;
+}
+
+.footer__nav-item a:hover,
+.footer__contacts a:hover,
+.footer__row-bottom a:hover {
+  color: var(--light-blue);
+}

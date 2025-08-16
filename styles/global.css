@@ -91,7 +91,13 @@ section,
   background-repeat: no-repeat;
   background-position: center;
   transform-origin: center;
+  animation-play-state: running;
 }
+
+.cta:hover::before {
+  animation-play-state: paused;
+}
+
 .cta a {
   position: relative;
   z-index: 1;

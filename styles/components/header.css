@@ -20,7 +20,13 @@
   font-weight: 500;
   color: var(--black);
   cursor: pointer;
+  transition: color 200ms ease-out;
 
   font-style: normal;
   text-decoration: none;
+}
+
+.header__nav-item a:hover,
+.header__contacts a:hover {
+  color: var(--light-blue);
 }
