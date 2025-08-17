@@ -23,17 +23,22 @@
   <body>
     <header class="header">
       <img src="assets/logo.svg" alt="" class="header__logo logo" />
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-item"><a href="#services">Услуги</a></li>
-          <li class="header__nav-item"><a href="#advantages">Компания</a></li>
-          <li class="header__nav-item"><a href="#partners">Партнеры</a></li>
-          <li class="header__nav-item"><a href="#contacts">Контакты</a></li>
-        </ul>
-      </nav>
-      <address class="header__contacts">
-        <a href="tel:+79857992151">+7 985 799-21-51</a>
-      </address>
+      <div class="header__menu-mobile">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#services">Услуги</a></li>
+            <li class="header__nav-item"><a href="#advantages">Компания</a></li>
+            <li class="header__nav-item"><a href="#partners">Партнеры</a></li>
+            <li class="header__nav-item"><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <address class="header__contacts">
+          <a href="tel:+79857992151">+7 985 799-21-51</a>
+        </address>
+      </div>
+      <button class="header__menu-button">
+        <img src="assets/Header/burger-menu.svg" alt="" />
+      </button>
     </header>
 
     <main>
@@ -45,14 +50,15 @@
               <span>В офисах, на складах</span>
               <span>И на объектах после ремонта</span>
             </div>
-            <h1 class="hero__title">Чистота бизнеса начинается с нас</h1>
+            <h1 class="hero__title">
+              <span>Чистота бизнеса</span>
+              <span>начинается с нас</span>
+            </h1>
           </div>
-          <div class="hero__cta cta">
-            <a href="#" class="cta__button">
-              <span>Оставить</span>
-              <span>заявку</span>
-            </a>
-          </div>
+          <a href="#contacts" class="hero__cta cta">
+            <span>Оставить</span>
+            <span>заявку</span>
+          </a>
         </div>
         <div class="hero__row hero__row-bottom">
           <div class="hero__image">
@@ -63,6 +69,10 @@
             />
           </div>
         </div>
+        <button class="contacts__cta-mobile cta-mobile">
+          Оставить заявку
+          <img src="assets/arrow_outward.svg" alt="" />
+        </button>
       </section>
 
       <section id="services" class="section section--services"></section>
@@ -165,14 +175,16 @@
               <span class="badge contact__badge">[ ЭЛЕКТРОННАЯ ПОЧТА ]</span>
               <a href="mailto:lineclean@mail.ru">lineclean@mail.ru</a>
             </div>
+            <button class="contacts__cta-mobile cta-mobile">
+              Оставить заявку
+              <img src="assets/arrow_outward.svg" alt="" />
+            </button>
           </address>
 
-          <div class="contacts__cta cta">
-            <a href="#" class="cta__button">
-              <span>Оставить</span>
-              <span>заявку</span>
-            </a>
-          </div>
+          <a href="#contacts" class="contacts__cta cta">
+            <span>Оставить</span>
+            <span>заявку</span>
+          </a>
         </div>
       </section>
     </main>
@@ -180,18 +192,25 @@
     <footer class="footer">
       <div class="footer__inner">
         <div class="footer__row footer__row-top">
-          <img src="assets/logo.svg" alt="" class="footer__logo logo" />
-          <ul class="footer__nav-list">
-            <li class="footer__nav-item"><a href="#services">Услуги</a></li>
-            <li class="footer__nav-item"><a href="#advantages">Компания</a></li>
-            <li class="footer__nav-item"><a href="#partners">Партнеры</a></li>
-            <li class="footer__nav-item"><a href="#contacts">Контакты</a></li>
-          </ul>
+          <div class="footer__row-mobile">
+            <img src="assets/logo.svg" alt="" class="footer__logo logo" />
+
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item"><a href="#services">Услуги</a></li>
+              <li class="footer__nav-item">
+                <a href="#advantages">Компания</a>
+              </li>
+              <li class="footer__nav-item"><a href="#partners">Партнеры</a></li>
+              <li class="footer__nav-item"><a href="#contacts">Контакты</a></li>
+            </ul>
+          </div>
+
           <div class="footer__contacts">
             <a href="tel:+79857992151">+7 985 799-21-51</a>
             <a href="mailto:lineclean@mail.ru">lineclean@mail.ru</a>
           </div>
         </div>
+
         <hr size="1" class="footer__divider" />
         <div class="footer__row footer__row-bottom">
           <a href="#">Политика конфиденциальности</a>
@@ -199,6 +218,7 @@
       </div>
     </footer>
 
+    <script src="scripts/mobileMenu.js"></script>
     <script src="scripts/marquee.js"></script>
   </body>
 </html>

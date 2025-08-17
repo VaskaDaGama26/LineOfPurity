@@ -6,6 +6,7 @@
 .outsourcing__row {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 3.625rem;
   width: 100%;
 }
@@ -26,7 +27,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 0.625rem;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   line-height: 120%;
 
@@ -41,4 +42,51 @@
   line-height: 120%;
   color: var(--light-gray);
   content: "/" counter(item, decimal-leading-zero);
+}
+
+@media (max-width: 1439px) {
+  .section--outsourcing {
+    gap: 3.75rem;
+    margin-top: 80px;
+  }
+  .outsourcing__row {
+    flex-direction: column;
+  }
+  .outsourcing__image {
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+    object-position: center 5%;
+  }
+  .outsourcing__item {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.875rem;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 1023px) {
+  .section--outsourcing {
+    gap: 1.25rem;
+    margin-top: 60px;
+  }
+  .outsourcing__row {
+    gap: 1.25rem;
+  }
+  .outsourcing__item {
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 0.75rem;
+  }
+  .outsourcing__list {
+    gap: 1.25rem;
+  }
+  .outsourcing__item::before {
+    font-size: 2rem;
+  }
+  .outsourcing__image {
+    height: 203px;
+  }
 }

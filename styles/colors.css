@@ -8,5 +8,7 @@
   --light-blue: #619ce9;
   --hero-img-bg: hsla(214, 100%, 50%, 0.529);
   --hero-img-gradient: rgba(14, 65, 176, 0.32) 32%, rgba(0, 72, 150, 1) 100%;
-  --bg-marquee: #e8f3fc;
+  --marquee-bg: #e8f3fc;
+  --html-bg: #fbf9f5;
+  --mobile-menu-bg: #fbf9f5;
 }

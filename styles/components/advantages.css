@@ -37,3 +37,31 @@
   object-fit: cover;
   object-position: 50% top;
 }
+
+@media (max-width: 1439px) {
+  .section--advantages {
+    margin-top: 80px;
+  }
+  .advantages__video-wrapper {
+    height: 500px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .section--advantages {
+    margin-top: 60px;
+  }
+  .advantages__video-label span {
+    font-size: 0.75rem;
+    text-align: left;
+  }
+  .advantages__video-label span:last-child {
+    margin-top: 0.75rem;
+  }
+  .advantages__video-wrapper {
+    height: 150px;
+  }
+  .advantages__video {
+    gap: 1.25rem;
+  }
+}

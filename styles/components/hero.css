@@ -26,6 +26,12 @@
 }
 
 .hero__title {
+  width: fit-content;
+}
+
+.hero__title span {
+  display: block;
+  width: fit-content;
   font-family: "Helvetica Neue", sans-serif;
   font-size: 6rem;
   font-weight: 400;
@@ -59,4 +65,33 @@
 
   inset: 0;
   pointer-events: none;
+}
+
+@media (max-width: 1439px) {
+  .hero__title span {
+    font-size: 4.5rem;
+  }
+  .hero__image img {
+    height: 495px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .section--hero {
+    gap: 1.25rem;
+  }
+  .hero__subtitle-text span {
+    font-size: 0.75rem;
+  }
+  .hero__title span {
+    font-size: 2rem;
+  }
+  .hero__text {
+    gap: 0.625rem;
+  }
+  .hero__image img {
+    height: 203px;
+
+    object-position: 50% 30%;
+  }
 }

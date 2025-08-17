@@ -8,7 +8,7 @@
   padding: 1.5rem 0 2.75rem;
   overflow: hidden;
 
-  background-color: var(--bg-marquee);
+  background-color: var(--marquee-bg);
 }
 
 .partners__marquee-inner {
@@ -17,4 +17,35 @@
   gap: 7.5rem;
 
   white-space: nowrap;
+}
+
+.partners__marquee-inner img {
+  max-height: 187px;
+}
+
+@media (max-width: 1439px) {
+  .section--partners {
+    gap: 3.75rem;
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .section--partners {
+    gap: 1.25rem;
+    margin-top: 60px;
+  }
+  .partners__heading {
+    padding-inline: 15px !important;
+  }
+  .partners__marquee {
+    height: 100px;
+    padding: 0.875rem 0 1.125rem;
+  }
+  .partners__marquee-inner {
+    gap: 2.5rem;
+  }
+  .partners__marquee-inner img {
+    max-height: 67px;
+  }
 }
