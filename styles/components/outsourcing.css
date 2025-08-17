@@ -29,7 +29,6 @@
   gap: 0.625rem;
   font-size: 1.25rem;
   font-weight: 500;
-  line-height: 120%;
 
   counter-increment: item;
 }
@@ -39,7 +38,6 @@
   font-family: "Helvetica Neue";
   font-size: 3.5rem;
   font-weight: 500;
-  line-height: 120%;
   color: var(--light-gray);
   content: "/" counter(item, decimal-leading-zero);
 }

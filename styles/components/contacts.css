@@ -36,7 +36,6 @@
   font-family: "Helvetica Neue";
   font-size: 3rem;
   font-weight: 500;
-  line-height: 120%;
   color: var(--black);
   transition: color 200ms ease-out;
 

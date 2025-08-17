@@ -1,26 +1,23 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const menuButton = document.querySelector(".header__menu-button");
-  const menu = document.querySelector(".header__menu-mobile");
+$(document).ready(function () {
+  const $menuButton = $(".header__menu-button");
+  const $menu = $(".header__menu-mobile");
 
-  const toggleMenu = () => {
-    const isActive = menu.classList.toggle("active");
-    menuButton.classList.toggle("active");
+  function toggleMenu() {
+    const isActive = $menu.toggleClass("active").hasClass("active");
+    $menuButton.toggleClass("active");
 
     if (isActive) {
-      document.documentElement.style.overflowY = "hidden";
+      $("html").css("overflow-y", "hidden");
     } else {
-      document.documentElement.style.overflowY = "";
+      $("html").css("overflow-y", "");
     }
-  };
+  }
 
-  menuButton.addEventListener("click", toggleMenu);
+  $menuButton.on("click", toggleMenu);
 
-  menu.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      menu.classList.remove("active");
-      menuButton.classList.remove("active");
-      document.documentElement.style.overflowY = "";
-      document.body.style.overflowY = "";
-    });
+  $menu.find("a").on("click", function () {
+    $menu.removeClass("active");
+    $menuButton.removeClass("active");
+    $("html, body").css("overflow-y", "");
   });
 });
