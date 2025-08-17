@@ -15,3 +15,12 @@
     format("opentype");
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+
+  src: url("../assets/fonts/helvetica-neue/HelveticaNeueMediumItalic.otf")
+    format("opentype");
+  font-style: italic;
+}

@@ -81,7 +81,7 @@
   }
 
   .header__menu-mobile {
-    position: absolute;
+    position: fixed;
     top: 90px;
     left: 0;
     z-index: 100;
@@ -92,7 +92,6 @@
     height: 100dvh;
     padding: 1.25rem 0;
     opacity: 0;
-    transition: transform 300ms ease, opacity 0.35s ease, visibility 0.35s ease;
     transform: translateX(100%);
 
     background-color: var(--mobile-menu-bg);
@@ -100,9 +99,9 @@
   }
 
   .header__menu-mobile.active {
-    display: flex;
     height: 100dvh;
     opacity: 1;
+    transition: transform 300ms ease, opacity 0.35s ease, visibility 0.35s ease;
     transform: translateX(0);
 
     visibility: visible;

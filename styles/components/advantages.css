@@ -2,6 +2,75 @@
   margin-top: 120px;
 }
 
+.advantages__list-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+  padding-block: 2rem 5rem;
+}
+
+.advantages__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+}
+.advantages__list::before {
+  position: absolute;
+  top: 0;
+  left: -32px;
+  height: 100%;
+  border: 1px solid var(--advantages-list-line);
+  content: "";
+}
+
+.advantages__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+.advantages__item img {
+  width: 100%;
+  height: 370px;
+
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.advantages__item::before {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  content: "";
+
+  background-color: var(--advantages-list-type);
+}
+
+.advantages__item p {
+  margin: 0;
+}
+
+.advantages__item p span {
+  display: block;
+  font-family: "Helvetica Neue";
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 120%;
+}
+
 .advantages__video {
   display: flex;
   flex-direction: column;
@@ -39,15 +108,31 @@
 }
 
 @media (max-width: 1439px) {
+  .advantages__list-wrapper {
+    padding-block: 60px;
+  }
   .section--advantages {
     margin-top: 80px;
   }
   .advantages__video-wrapper {
     height: 500px;
   }
+  .advantages__list,
+  .advantages__item {
+    width: 100%;
+  }
+  .advantages__list::before {
+    display: none;
+  }
+  .advantages__item::before {
+    display: none;
+  }
 }
 
 @media (max-width: 1023px) {
+  .advantages__list-wrapper {
+    padding: 40px 0 20px;
+  }
   .section--advantages {
     margin-top: 60px;
   }
@@ -63,5 +148,17 @@
   }
   .advantages__video {
     gap: 1.25rem;
+  }
+  .advantages__item {
+    gap: 1.25rem;
+  }
+  .advantages__item p span {
+    font-size: 0.75rem;
+  }
+  .advantages__list {
+    gap: 1.25rem;
+  }
+  .advantages__item img {
+    height: 150px;
   }
 }

@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
     menuButton.classList.toggle("active");
 
     if (isActive) {
-      document.body.style.overflow = "hidden";
+      document.documentElement.style.overflowY = "hidden";
     } else {
-      document.body.style.overflow = "";
+      document.documentElement.style.overflowY = "";
     }
   };
 
@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", () => {
       menu.classList.remove("active");
       menuButton.classList.remove("active");
-      document.body.style.overflow = "";
+      document.documentElement.style.overflowY = "";
+      document.body.style.overflowY = "";
     });
   });
 });
